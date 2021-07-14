@@ -7,7 +7,15 @@
     clear: both;
     display: block;
 }
-
+li {
+    list-style-type: none;
+}
+.icon_blue {
+    color: dodgerblue;
+}
+.white {
+    color: white;
+}
  /* navbar  */
 .logo_text {
     color: dodgerblue;
@@ -41,10 +49,10 @@
 }
 /* Submenu*/
 .submenu {
-    background-color: lightgray;
+    background-color: white;
 }
 .submenu_sub {
-    margin: 10px 5px;
+    margin: 10px 5px 0;
 }
 .submenu h4 {
     color: dodgerblue;
@@ -64,7 +72,7 @@
 /* Services*/
 .services h1 {
     padding-bottom: 20px;
-    border-bottom: 3px solid blue;
+    border-bottom: 3px solid dodgerblue;
     width: 70px;
     margin-bottom: 50px;
 }
@@ -74,5 +82,45 @@
 }
 .services_menu h4 {
     color: dodgerblue;
+}
+ /* Portfolio */
+.Portfolio_Block {
+    margin-bottom: 50px;
+}
+.portfolio h1{
+    padding-bottom: 20px;
+    border-bottom: 3px solid dodgerblue;
+    width: 70px;
+    margin-bottom: 50px;
+}
+.Portfolio_Images img {
+    width: 400px;
+    height: 350px;
+    margin-bottom: 50px;
+}
+.Portfolio_Block div button {
+    width: 250px;
+    height: 35px;
+}
+ /* Team  */
+
+.team h1 {
+    padding-bottom: 30px;
+    border-bottom: 3px solid dodgerblue;
+    width: 100px;
+    border-bottom-width: unset;
+}
+
+/*Slider Avatar */
+.slider_avatar {
+    padding-top: 50px;
+}
+.slider_avatar img {
+    width: 100px;
+    height: 100px;
+}
+.slider_avatar p {
+    margin: 0;
+    padding: 60px 0;
 }
 
