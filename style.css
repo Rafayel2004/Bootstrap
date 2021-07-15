@@ -7,25 +7,32 @@
     clear: both;
     display: block;
 }
+hr {
+    width: 60px;
+    color: dodgerblue;
+}
 li {
     list-style-type: none;
 }
-.icon_blue {
+.icon-blue {
     color: dodgerblue;
 }
 .white {
     color: white;
 }
  /* navbar  */
-.logo_text {
+.logo-text {
     color: dodgerblue;
 }
-.menu_home {
+.menu-home {
     font-size: 16px;
 }
-.menu_hover:hover {
+.menu-hover:hover {
     color: white;
     border-top: 2px solid #0d6efd;
+}
+.primary {
+    color: #0d6efd;
 }
 
 /* Slider*/
@@ -51,7 +58,7 @@ li {
 .submenu {
     background-color: white;
 }
-.submenu_sub {
+.submenu-sub {
     margin: 10px 5px 0;
 }
 .submenu h4 {
@@ -76,15 +83,15 @@ li {
     width: 70px;
     margin-bottom: 50px;
 }
-.services_menu div img {
+.services-menu div img {
     width: 100px;
     padding: 0 20px;
 }
-.services_menu h4 {
+.services-menu h4 {
     color: dodgerblue;
 }
  /* Portfolio */
-.Portfolio_Block {
+.Portfolio-Block {
     margin-bottom: 50px;
 }
 .portfolio h1{
@@ -93,12 +100,12 @@ li {
     width: 70px;
     margin-bottom: 50px;
 }
-.Portfolio_Images img {
+.Portfolio-Images img {
     width: 400px;
     height: 350px;
     margin-bottom: 50px;
 }
-.Portfolio_Block div button {
+.Portfolio-Block div button {
     width: 250px;
     height: 35px;
 }
@@ -112,19 +119,43 @@ li {
 }
 
 /*Slider Avatar */
-.slider_avatar {
+.slider-avatar {
     padding-top: 50px;
+    height: 500px;
 }
-.slider_avatar img {
+.slider-avatar img {
     width: 100px;
     height: 100px;
-    margin-bottom: 200px;
 }
-.slider_avatar p {
+.slider-avatar p {
     margin: 0;
     padding: 60px 0;
 }
-.slider_cube > button {
-    height: 50px;
+.cube-button {
+    width: 25px;
+    height: 25px;
+}
+ /* Our Stories  */
+.Our-Stories-h1 {
+    padding-bottom: 20px;
+    margin-right: 50px;
+    border-bottom: 3px solid dodgerblue;
+    width: 50px;
+}
+.div-card  {
+    width: 430px;
 }
 
+/* Contact us  */
+.contact-us-h1 {
+    padding-bottom: 20px;
+    margin-right: 100px;
+    border-bottom: 3px solid dodgerblue;
+    width: 50px;
+}
+
+/* Our Gallery*/
+.our-gallery img {
+    width: 80px;
+    margin-bottom: 10px;
+}
