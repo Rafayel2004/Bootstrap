@@ -118,9 +118,13 @@ li {
 .slider_avatar img {
     width: 100px;
     height: 100px;
+    margin-bottom: 200px;
 }
 .slider_avatar p {
     margin: 0;
     padding: 60px 0;
+}
+.slider_cube > button {
+    height: 50px;
 }
 

@@ -48,10 +48,26 @@
       <workItem from="1626161558042" duration="15988000" />
       <workItem from="1626181654049" duration="3272000" />
       <workItem from="1626238128405" duration="26681000" />
+      <workItem from="1626279344851" duration="673000" />
+      <workItem from="1626280048113" duration="2434000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="461" y="165" key="SettingsEditor" timestamp="1626281033941">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="461" y="165" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1626281033941" />
+    <state x="92" y="92" width="1736" height="856" key="dock-window-1" timestamp="1626280033348">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="92" y="92" width="1736" height="856" key="dock-window-1/0.0.1920.1040@0.0.1920.1040" timestamp="1626280033348" />
+    <state x="92" y="92" width="1736" height="856" key="dock-window-2" timestamp="1626280033348">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="92" y="92" width="1736" height="856" key="dock-window-2/0.0.1920.1040@0.0.1920.1040" timestamp="1626280033348" />
   </component>
 </project>
