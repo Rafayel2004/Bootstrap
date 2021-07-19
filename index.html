@@ -1,80 +1,112 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8">`
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style/sass.css">
 </head>
 <body>
 <!--Navbar-->
 <div class="container" >
     <div class="row">
-        <div class="navbar mt-2">
-        <div class="logo">
-            <h2 class="logo-text">MATRL</h2>
+        <div class="navbar ">
+            <div class="logo  col-auto" id="logo">
+                <h2 class="logo-text">MATRL</h2>
+            </div>
+            <div class=" col-auto navbar-menu" id="navbar-menu">
+                <nav class="navbar navbar-expand-lg navbar-light pb-3 ms-4 m-auto" >
+                    <div class="collapse navbar-collapse text-center" id="navbarNav">
+                        <ul class="navbar-nav mt-2">
+                            <li class="nav-link me-1 border-top border-primary border-2 ">
+                                <a class="nav-link  text-primary" href="#">Home</a>
+                            </li>
+                            <li class="nav-link   me-1">
+                                <a class="nav-link" href="#">Pages</a>
+                            </li>
+                            <li class="nav-link me-1">
+                                <a class="nav-link  " href="#">Elements</a>
+                            </li>
+                            <li class="nav-link me-1">
+                                <a class="nav-link  " href="#">Portfolio </a>
+                            </li>
+                            <li class="nav-link me-1">
+                                <a class="nav-link  " href="#">Blog </a>
+                            </li>
+                            <li class="nav-link me-1">
+                                <a class=" nav-link  " href="#">Contact Us </a>
+                            </li>
+                            <li class="nav-link me-1">
+                                <a class="nav-link"  href="#"><i class="bg-primary p-2 fa fa-search" aria-hidden="true"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+                <a href="#" class="icon" id="burger">
+                    <i class="fa fa-bars fa-2x mb-3"></i>
+                </a>
+            </div>
         </div>
-        <div>
-            <nav class="navbar navbar-expand-lg navbar-light pb-3" >
-                <div class="collapse navbar-collapse text-sz" id="navbarNav">
-                    <ul class="navbar-nav float-end ">
-                        <li class="nav-item me-1">
-                            <a class="nav-link border-top border-primary border-2 text-primary" href="#">Home</a>
+        <div class="col-12 d-none navbar-resp" id="navbar">
+            <nav class="navbar navbar-light pb-3 ms-4 m-auto" >
+                <div class="navbar-collapse" id="navbar-resp">
+                    <ul class="navbar-nav mt-2">
+                        <li class="nav-link me-1 bg-light  pl-2">
+                            <a class="nav-link  text-primary" href="#">Home</a>
                         </li>
-                        <li class="nav-item menu-hover me-1">
+                        <li class="nav-link   me-1">
                             <a class="nav-link" href="#">Pages</a>
                         </li>
-                        <li class="nav-item me-1">
-                            <a class="nav-link menu-hover" href="#">Elements</a>
+                        <li class="nav-link me-1">
+                            <a class="nav-link" href="#">Elements</a>
                         </li>
-                        <li class="nav-item me-1">
-                            <a class="nav-link menu-hover" href="#">Portfolio </a>
+                        <li class="nav-link me-1">
+                            <a class="nav-link" href="#">Portfolio </a>
                         </li>
-                        <li class="nav-item me-1">
-                            <a class="nav-link menu-hover" href="#">Blog </a>
+                        <li class="nav-link me-1">
+                            <a class="nav-link" href="#">Blog </a>
                         </li>
-                        <li class="nav-item me-1">
-                            <a class="nav-link menu-hover" href="#">Contact Us </a>
+                        <li class="nav-link me-1">
+                            <a class=" nav-link" href="#">Contact Us </a>
                         </li>
-                        <li class="nav-item me-1">
-                            <a class="nav-link"  href="#"><i class="bg-primary p-2 fa fa-search" aria-hidden="true"></i></a>
-                        </li>
+<!--                        <li class="nav-link me-1">-->
+<!--                            <a class="nav-link"  href="#"><i class="bg-primary p-2 fa fa-search" aria-hidden="true"></i></a>-->
+<!--                        </li>-->
                     </ul>
                 </div>
             </nav>
         </div>
     </div>
-    </div>
 </div>
 
 <!-- Slider-->
-<div class="container-fluid">
+<div class="container-fluid p-0 m-0" id="carousel">
         <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
             </div>
-            <div class="carousel-inner ">
+            <div class="carousel-inner">
                 <div class="carousel-inner ">
                     <div class="carousel-item active">
-                        <img src="Image/slider-1.jpg"  class="d-block" alt="">
+                        <img src="Image/slider-1.jpg"  class="d-block w-100" alt="">
                         <h1 class="position-absolute top-50 start-50 translate-middle text-white display-3 fw-bolder mb-5">Refreshing Design Elements</h1>
                         <p class=" position-absolute top-50 start-50 translate-middle text-white fs-2">Extensively Customizable tons of UI Elements</p>
                         <button type="button" class="btn btn-light position-absolute bottom-0 start-50 translate-middle-x">LEARN MORE</button>
                     </div>
                     <div class="carousel-item ">
-                        <img src="Image/slider-2.jpg" class="d-block" alt="">
+                        <img src="Image/slider-2.jpg" class="d-block w-100" alt="">
                         <h1 class="position-absolute top-50 start-50 translate-middle text-white display-3 fw-bolder">Refreshing Design Elements</h1>
                         <p class=" position-absolute top-50 start-50 translate-middle text-white fs-2">Extensively Customizable tons of UI Elements</p>
                         <button type="button" class="btn btn-light position-absolute bottom-0 start-50 translate-middle-x">LEARN MORE</button>
                     </div>
                     <div class="carousel-item ">
-                        <img src="Image/slider-3.jpg" class="d-block" alt="">
+                        <img src="Image/slider-3.jpg" class="d-block w-100" alt="">
                         <h1 class="position-absolute top-50 start-50 translate-middle text-white display-3 fw-bolder">Refreshing Design Elements</h1>
                         <p class=" position-absolute top-50 start-50 translate-middle text-white fs-2">Extensively Customizable tons of UI Elements</p>
                         <button type="button" class="btn btn-light position-absolute bottom-0 start-50 translate-middle-x">LEARN MORE</button>
@@ -86,26 +118,26 @@
 
 <!--Submenu With 4 Header-->
 <div class="container mt-5">
-    <div class="col d-flex justify-content-evenly info">
-        <div class="text-center col-3 ">
+    <div class="row d-flex justify-content-evenly info">
+        <div class="text-center col-lg-3 col-md-6 col-sm-12">
             <i class="fas fa-wine-bottle icon-blue fa-3x"></i>
             <h3>Bootstrap 4</h3>
             <p>Excepteur sint occaecat cupidatat<br>
                 non proudt, sunt in culpa qui</p>
         </div>
-         <div class="text-center col-3">
+         <div class="text-center col-lg-3 col-md-6 col-sm-12">
              <i class="fas fa-lightbulb fa-3x icon-blue"></i>
              <h3>Material Design</h3>
              <p>Excepteur sint occaecat cupidatat <br>
                 non proudt, sunt in culpa qui</p>
          </div>
-        <div class="text-center col-3">
+        <div class="text-center col-lg-3 col-md-6 col-sm-12">
             <i class="fas fa-bolt icon-blue fa-3x"></i>
             <h3>Fast and clean</h3>
             <p>Excepteur sint occaecat cupidatat <br>
                non proudt, sunt in culpa qui</p>
         </div>
-        <div class="text-center col-3">
+        <div class="text-center col-lg-3 col-md-6 col-sm-12">
             <i class="fas fa-laptop icon-blue fa-3x"></i>
             <h3>Fully Responsive</h3>
             <p>Excepteur sint occaecat cupidatat <br>
@@ -118,34 +150,32 @@
 <!--Submenu -->
 <div class="container-fluid bg-light">
     <div class="container pt-5 pb-5">
-        <div class="d-flex inline">
-            <div class="submenu justify-content-center border saas">
-                <div class="d-flex justify-content-center text-center pt-1 border-bottom">
-                    <div class="submenu-sub p-2 bg-primary">
-                        <i class="fas fa-user fa-3x white"></i>
-                        <h4 class="text-white">Business</h4>
-                    </div>
-                    <div class="submenu-sub p-2">
-                        <i class="fas fa-bolt icon-blue fa-3x"></i>
-                        <h4>StartUp</h4>
-                    </div>
-                    <div class="submenu-sub p-2">
-                        <i class="fas fa-infinity fa-3x icon-blue"></i>
-                        <h4>Agency</h4>
-                    </div>
-                    <div class="submenu-sub p-2">
-                        <i class="fas fa-cloud fa-3x icon-blue" ></i>
-                        <h4>Saas</h4>
-                    </div>
-                </div>
-                <div class="submenu-sub-text p-4">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aliquid amet aut beatae, consequuntur, dignissimos doloremque explicabo fugiat incidunt ipsam iste iusto obcaecati placeat porro praesentium qui sint velit voluptatum?
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aliquid architecto blanditiis culpa dolorum, ducimus et explicabo facere hic id illo, impedit libero mollitia perspiciatis quasi ullam voluptatem voluptatibus! Est.
+        <div class="row g-4">
+            <div class="col-xl-6 col-sm-12 submenu justify-content-center saas">
+                <ul class="nav nav-tabs justify-content-evenly" id="myTab" role="tablist ">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true"><i class="fas fa-user fa-2x primary"></i><br>Home</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false"><i class="fas fa-bolt icon-blue fa-2x"></i><br>Profile</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="agency-tab" data-bs-toggle="tab" data-bs-target="#agency" type="button" role="tab" aria-controls="agency" aria-selected="false"><i class="fas fa-infinity fa-2x icon-blue"></i><br>Agency</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="saas-tab" data-bs-toggle="tab" data-bs-target="#saas" type="button" role="tab" aria-controls="saas" aria-selected="false"><i class="fas fa-infinity fa-2x icon-blue"></i><br>Saas</button>
+                    </li>
+                </ul>
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, architecto commodi debitis deserunt distinctio esse et eum explicabo fugit hic ipsam nam, necessitatibus nisi porro quidem tenetur unde, vitae voluptatibus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos, eum expedita explicabo fuga harum, in laboriosam maxime nemo nulla odit perferendis quidem quisquam rem sequi suscipit! Earum iure quidem repellendus.</div>
+                    <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, architecto commodi debitis deserunt distinctio esse et eum explicabo fugit hic ipsam nam, necessitatibus nisi porro quidem tenetur unde, vitae voluptatibus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos, eum expedita explicabo fuga harum, in laboriosam maxime nemo nulla odit perferendis quidem quisquam rem sequi suscipit! Earum iure quidem repellendus.</div>
+                    <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, architecto commodi debitis deserunt distinctio esse et eum explicabo fugit hic ipsam nam, necessitatibus nisi porro quidem tenetur unde, vitae voluptatibus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos, eum expedita explicabo fuga harum, in laboriosam maxime nemo nulla odit perferendis quidem quisquam rem sequi suscipit! Earum iure quidem repellendus.</div>
+                    <div class="tab-pane fade" id="saas" role="tabpanel" aria-labelledby="saas-tab">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, architecto commodi debitis deserunt distinctio esse et eum explicabo fugit hic ipsam nam, necessitatibus nisi porro quidem tenetur unde, vitae voluptatibus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos, eum expedita explicabo fuga harum, in laboriosam maxime nemo nulla odit perferendis quidem quisquam rem sequi suscipit! Earum iure quidem repellendus.</div>
                 </div>
             </div>
             <!--Submenu video-->
-            <div class="submenu-video">
-                <iframe width="560" height="315" src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div class="submenu-video col-xl-6 col-sm-12" id="video">
+                <iframe width="100%" height="315" src="https://www.youtube.com/embed/VuvaUgY0c_A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
             <!--Submenu Video_End-->
         </div>
@@ -155,51 +185,51 @@
 <!--Services-->
 <div class="container">
         <div class="services">
-        <h1>SERVICES</h1>
+            <h1>SERVICES</h1>
         <div class="services-menu">
-            <div class="d-flex justify-content-evenly flex-wrap ms-5">
-                <div class="d-flex p-2">
-                    <i class="fas fa-bolt icon-blue fa-3x p-3"></i>
-                    <div>
-                        <h4>Diccovery and strategi</h4>
-                        <p>Excepteur sint occaecat cupidatat non <br> proudt  sunt in culpa qui</p>
+            <div class="row mt-5">
+                    <div class="d-flex p-2 col-md-4 col-sm-6">
+                        <i class="fas fa-bolt icon-blue fa-3x p-3"></i>
+                        <div>
+                            <h4>Diccovery and strategi</h4>
+                            <p>Excepteur sint occaecat cupidatat non <br> proudt  sunt in culpa qui</p>
+                        </div>
                     </div>
-                </div>
-                <div class="d-flex p-2">
-                    <i class="fas fa-align-justify fa-3x icon-blue p-3"></i>
-                    <div>
-                        <h4>Interface-Design</h4>
-                        <p>Excepteur sint occaecat cupidatat  non <br> proudt  sunt in culpa qui</p>
+                    <div class="d-flex p-2 col-md-4 col-sm-6">
+                        <i class="fas fa-align-justify fa-3x icon-blue p-3"></i>
+                        <div>
+                            <h4>Interface-Design</h4>
+                            <p>Excepteur sint occaecat cupidatat  non <br> proudt  sunt in culpa qui</p>
+                        </div>
                     </div>
-                </div>
-                <div class="d-flex p-2">
-                    <i class="fas fa-fingerprint fa-3x icon-blue p-3"></i>
-                    <div>
-                        <h4>Branding</h4>
-                        <p>Excepteur sint occaecat cupidatat  non <br> proudt  sunt in culpa qui</p>
+                    <div class="d-flex p-2 col-md-4 col-sm-6">
+                        <i class="fas fa-fingerprint fa-3x icon-blue p-3"></i>
+                        <div>
+                            <h4>Branding</h4>
+                            <p>Excepteur sint occaecat cupidatat  non <br> proudt  sunt in culpa qui</p>
+                        </div>
                     </div>
-                </div>
-                <div class="d-flex p-2">
-                    <i class="far fa-comment-alt fa-3x icon-blue p-3"></i>
-                    <div>
-                        <h4>Communtication</h4>
-                        <p>Excepteur sint occaecat cupidatat non <br> proudt sunt in culpa qui</p>
+                    <div class="d-flex p-2 col-md-4 col-sm-6">
+                        <i class="far fa-comment-alt fa-3x icon-blue p-3"></i>
+                        <div>
+                            <h4>Communtication</h4>
+                            <p>Excepteur sint occaecat cupidatat non <br> proudt sunt in culpa qui</p>
+                        </div>
                     </div>
-                </div>
-                <div class="d-flex p-2">
-                    <i class="fas fa-laptop icon-blue fa-3x p-3"></i>
-                    <div>
-                        <h4>Multimedia Production</h4>
-                        <p>Excepteur sint occaecat cupidatat non <br> proudt  sunt in culpa qui</p>
+                    <div class="d-flex p-2 col-md-4 col-sm-6">
+                        <i class="fas fa-laptop icon-blue fa-3x p-3"></i>
+                        <div>
+                            <h4>Multimedia Production</h4>
+                            <p>Excepteur sint occaecat cupidatat non <br> proudt  sunt in culpa qui</p>
+                        </div>
                     </div>
-                </div>
-                <div class="d-flex p-1 ">
-                    <i class="fas fa-code fa-3x icon-blue p-3"></i>
-                    <div>
-                        <h4>Development solution</h4>
-                        <p>Excepteur sint occaecat cupidatat non <br> proudt  sunt in culpa qui</p>
+                    <div class="d-flex p-1 col-md-4 col-sm-6">
+                        <i class="fas fa-code fa-3x icon-blue p-3"></i>
+                        <div>
+                            <h4>Development solution</h4>
+                            <p>Excepteur sint occaecat cupidatat non <br> proudt  sunt in culpa qui</p>
+                        </div>
                     </div>
-                </div>
             </div>
         </div>
     </div>
@@ -210,9 +240,9 @@
     <div class="container">
         <div class="portfolio mt-5 pb-1">
             <!--Portfolio_Header-->
-            <div class="d-flex pt-5">
+            <div class="d-flex pt-5 pb-5">
                 <div class="me-auto">
-                    <h1>PORTFOLIO</h1>
+                    <h1 class="portfolio-h1">PORTFOLIO</h1>
                 </div>
                 <div class="portfolio-menu">
                     <div>
@@ -227,14 +257,14 @@
                 </div>
             </div>
             <!--Portfolio-Header-End-->
-            <div class="Portfolio-Block">
-                <div class="Portfolio-Images d-flex justify-content-between flex-wrap">
-                    <img src="Image/4.jpg" alt="">
-                    <img src="Image/5.jpg" alt="">
-                    <img src="Image/6.jpg" alt="">
-                    <img src="Image/7.jpg" alt="">
-                    <img src="Image/8.jpg" alt="">
-                    <img src="Image/9.jpg" alt="">
+            <div class="portfolio-block">
+                <div class="portfolio-images row ">
+                    <img src="Image/4.jpg" class="col" alt="">
+                    <img src="Image/5.jpg" class="col" alt="">
+                    <img src="Image/6.jpg" class="col" alt="">
+                    <img src="Image/7.jpg" class="col" alt="">
+                    <img src="Image/8.jpg" class="col" alt="">
+                    <img src="Image/9.jpg" class="col" alt="">
                 </div>
                 <div class="m-auto col-md-12 text-center">
                     <button type="button" class="m-auto btn btn-primary">Explore more work</button>
@@ -248,24 +278,24 @@
 <!--Number Count-->
 <div class="container mt-5">
     <div class="number-count mb-5">
-        <div class="d-flex justify-content-around ">
-            <div class="text-center">
-                <img src="icons/13.png" alt="">
+        <div class="d-flex justify-content-around row">
+            <div class="text-center col">
+                <i class="fas fa-check icon-blue fa-3x p-3"></i>
                 <h3><strong>768</strong></h3>
                 <p>Project Delivered</p>
             </div>
-            <div class="text-center">
-                <img src="icons/14.png" alt="">
+            <div class="text-center col">
+                <i class="fas fa-clock icon-blue fa-3x p-3"></i>
                 <h3><strong>900</strong></h3>
                 <p>Working Hours</p>
             </div>
-            <div class="text-center">
-                <img src="icons/4.png" alt="">
+            <div class="text-center col">
+                <i class="fas fa-laptop icon-blue fa-3x p-3" aria-hidden="true"></i>
                 <h3><strong>215</strong></h3>
                 <p>Work Station</p>
             </div>
-            <div class="text-center">
-                <img src="icons/16.png" alt="">
+            <div class="text-center col">
+                <i class="far fa-circle icon-blue fa-3x p-3"></i>
                 <h3><strong>553</strong></h3>
                 <p>International Clients</p>
             </div>
@@ -279,7 +309,7 @@
         <div class="team">
             <h1>OURTEAM</h1>
             <div class="row row-cols-1 row-cols-md-4 g-4 mt-5 ">
-                <div class="col">
+                <div class="col col-md-6 col-lg-3">
                     <div class="card">
                         <img src="Image/11.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
@@ -291,7 +321,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col">
+                <div class="col col-md-6 col-lg-3">
                     <div class="card">
                         <img src="Image/10.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
@@ -303,7 +333,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col">
+                <div class="col col-md-6 col-lg-3">
                     <div class="card">
                         <img src="Image/11.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
@@ -315,7 +345,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col">
+                <div class="col col-md-6 col-lg-3">
                     <div class="card">
                         <img src="Image/10.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
@@ -374,19 +404,11 @@
 <!-- Brand Start -->
 <div class="container-fluid bg-light border-bottom">
     <div class="container p-5">
-        <div class="brand d-flex">
-            <div>
-                <img src="Image/brand/brand_logo_2.png" alt="">
-            </div>
-            <div>
-                <img src="Image/brand/brand_logo_2.png" alt="">
-            </div>
-            <div>
-                <img src="Image/brand/brand_logo_2.png" alt="">
-            </div>
-            <div>
-                <img src="Image/brand/brand_logo_2.png" alt="">
-            </div>
+        <div class="brand row d-flex row-cols-2">
+            <img src="Image/brand/brand_logo_2.png" class="col-sm-6 col-lg-3 col-12 mb-3" alt="">
+            <img src="Image/brand/brand_logo_2.png" class="col-sm-6 col-lg-3 col-12 mb-3" alt="">
+            <img src="Image/brand/brand_logo_2.png" class="col-sm-6 col-lg-3 col-12 mb-3" alt="">
+            <img src="Image/brand/brand_logo_2.png" class="col-sm-6 col-lg-3 col-12 mb-3" alt="">
         </div>
     </div>
 </div>
@@ -394,52 +416,56 @@
 <!-- Our Stories -->
 <div class="container mb-5">
     <div class="Our-Stories">
-        <div class="d-flex pt-5">
-            <h1 class="Our-Stories-h1">OUR </h1>
-            <h1>STORIES</h1>
+        <div class="d-flex pt-5 our-stories-h1">
+            <h1>OUR STORIES</h1>
         </div>
-        <div>
-            <div class="card-deck d-flex justify-content-between">
-                <div class="card div-card ">
-                    <img class="card-img-top" src="Image/21.jpg" alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title text-primary">Music for refreshment</h5>
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                    </div>
-                    <div class="card-footer d-flex">
-                        <div class="me-auto">
-                            <i class="far primary fa-comment-alt"></i>
-                            <span class="text-primary">24 Comments</span>
+            <div class="row pt-5 g-4 ">
+                <div class="col-xxl-4 col-md-6">
+                    <div class="card">
+                        <img class="card-img-top" src="Image/21.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title text-primary">Music for refreshment</h5>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
                         </div>
-                        <i class="primary far fa-arrow-alt-circle-right line"></i>
+                        <div class="card-footer d-flex">
+                            <div class="me-auto">
+                                <i class="far primary fa-comment-alt"></i>
+                                <span class="text-primary">24 Comments</span>
+                            </div>
+                            <i class="primary far fa-arrow-alt-circle-right line"></i>
+                        </div>
                     </div>
                 </div>
-                <div class="card div-card">
-                    <img class="card-img-top" src="Image/20.jpg" alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title text-primary">We support your custom</h5>
-                        <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-                    </div>
-                    <div class="card-footer d-flex">
-                        <div class="me-auto">
-                            <i class="far primary fa-comment-alt"></i>
-                            <span class="text-primary">24 Comments</span>
+                <div class="col-xxl-4 col-md-6">
+                    <div class="card">
+                        <img class="card-img-top" src="Image/20.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title text-primary">We support your custom</h5>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
                         </div>
-                        <i class="primary far fa-arrow-alt-circle-right line"></i>
+                        <div class="card-footer d-flex">
+                            <div class="me-auto">
+                                <i class="far primary fa-comment-alt"></i>
+                                <span class="text-primary">24 Comments</span>
+                            </div>
+                            <i class="primary far fa-arrow-alt-circle-right line"></i>
+                        </div>
                     </div>
                 </div>
-                <div class="card div-card">
-                    <img class="card-img-top" src="Image/21.jpg" alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title text-primary">WE love photography</h5>
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-                    </div>
-                    <div class="card-footer d-flex">
-                        <div class="me-auto">
-                            <i class="far primary fa-comment-alt"></i>
-                            <span class="text-primary">24 Comments</span>
+                <div class="col-xxl-4 col-md-6">
+                    <div class="card">
+                        <img class="card-img-top" src="Image/21.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title text-primary">WE love photography</h5>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
                         </div>
-                        <i class="primary far fa-arrow-alt-circle-right line"></i>
+                        <div class="card-footer d-flex">
+                            <div class="me-auto">
+                                <i class="far primary fa-comment-alt"></i>
+                                <span class="text-primary">24 Comments</span>
+                            </div>
+                            <i class="primary far fa-arrow-alt-circle-right line"></i>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -447,19 +473,17 @@
         <div class="m-auto mt-5 col-md-12 text-center">
             <button type="button" class="m-auto btn btn-primary">Explore more work</button>
         </div>
-    </div>
 </div>
 
 <!-- Contact Us -->
 <div class="container-fluid bg-light mt-5 mb-5">
     <div class="container pt-5 pb-5">
         <div class="contact-us">
-            <div class="d-flex">
-                <h1 class="contact-us-h1">Contact</h1>
-                <h1>Us</h1>
+            <div class="contact-us-h1 d-flex">
+                <h1>Contact</h1>
             </div>
-            <div class="d-flex justify-content-around">
-                <div class="w-50 me-5">
+            <div class="justify-content-around row">
+                <div class="col-md-6 pt-2">
                     <div class="pt-3">
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi autem consequuntur cumque cupiditate, dolor doloremque eveniet harum ipsa neque odit optio recusandae rerum saepe sit tempora veniam, veritatis. Ab, maxime?</p>
                     </div>
@@ -477,10 +501,10 @@
                     </div>
                     <div class="mb-3">
                         <i class="white p-2 far bg-primary fa-clock fa-2x fa"></i>
-                        <span class="ms-3">Mon to Sat 09:30 AM 10:30 PM</span>
+                        <span class="ms-3">Mon to Sat 09:30 AM 10:30 </span>
                     </div>
                 </div>
-                <div class="w-50 ms-5">
+                <div class="col-md-6">
                     <form>
                         <div class="mb-3">
                             <label for="ExampleName" class="form-label"></label>
@@ -514,10 +538,9 @@
 <div class="container-fluid bg-secondary border-top border-primary border-5">
     <div class="container">
         <div>
-            <div class="d-flex text-white">
-                <div class="about col-3 p-3">
+            <div class="d-flex text-white row">
+                <div class="about col-sm-6 p-3 col-lg-3">
                     <h3 class="white">About</h3>
-                    <hr style="height: 3px">
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At commodi deserunt et minus Lorem ipsum dolor sit amet, consectetur </p>
                     <i class="fab p-2 fa-2x fa-facebook-square text-white"></i>
                     <i class="fab p-2 fa-2x fa-twitter-square text-white"></i>
@@ -525,14 +548,12 @@
                     <i class="fab p-2 fa-2x fa-github-square text-white"></i>
                     <i class="fab p-2 fa-2x fa-linkedin text-white"></i>
                 </div>
-                <div class="recent-posts col-3 p-3">
+                <div class="recent-posts col-lg-3 col-sm-6 p-3">
                     <h3 class="white">Recent Posts</h3>
-                    <hr style="height: 3px">
                     <p>Growth Hacking 101 30UX Tips and Tricks How to Scale Your business Getting Started with Sketch 10 tips to Validate Your Idea SEo Guideline for Designers</p>
                 </div>
-                <div class="quick-link col-3 p-3">
+                <div class="quick-link col col-sm-6 col-lg-3 p-3">
                     <h3 class="white">Quick Link</h3>
-                    <hr style="height: 3px">
                     <div class="col d-flex">
                         <div class="col-6">
                             <p>About Us</p>
@@ -548,9 +569,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="our-gallery p-3">
+                <div class="our-gallery col-12 col-sm-6 col-lg-3 p-3">
                     <h3>Our Gallery</h3>
-                    <hr style="height: 3px">
                     <div class="d-flex justify-content-between flex-wrap">
                         <img src="Image/4.jpg" alt="">
                         <img src="Image/5.jpg" alt="">
@@ -576,5 +596,6 @@
 
 <script src="https://kit.fontawesome.com/601943f52c.js" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="script.js"></script>
 </body>
 </html>

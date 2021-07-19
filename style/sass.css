@@ -1,0 +1,200 @@
+h1 {
+  position: relative;
+}
+
+h1:after {
+  content: "";
+  position: absolute;
+  top: 63px;
+  left: 0;
+  width: 50px;
+  height: 3px;
+  background-color: dodgerblue;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.clearfix {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+hr {
+  width: 60px;
+  color: dodgerblue;
+}
+
+li {
+  list-style-type: none;
+}
+
+.icon-blue {
+  color: dodgerblue;
+}
+
+.white {
+  color: white;
+}
+
+.icon {
+  display: none;
+}
+
+/* Media*/
+@media screen and (max-width: 992px) {
+  .navbar-menu a:not(:first-child) {
+    display: none;
+  }
+
+  .navbar-menu a.icon {
+    float: right;
+    display: block;
+  }
+}
+@media screen and (min-width: 992px) {
+  .navbar-resp {
+    display: none;
+  }
+}
+/* navbar  */
+.logo-text {
+  color: dodgerblue;
+}
+
+.menu-home {
+  font-size: 16px;
+}
+
+.menu-hover:hover {
+  color: white;
+  border-top: 2px solid #0d6efd;
+}
+
+.primary {
+  color: #0d6efd;
+}
+
+/* Slider*/
+.slider {
+  width: 1920px;
+  margin: 0;
+}
+
+#carousel img {
+  height: calc(100vh - 111px);
+}
+
+.carousel-inner p {
+  margin-top: 120px;
+}
+
+.carousel-inner button {
+  margin-bottom: 200px;
+}
+
+/* info */
+.info {
+  margin: 10px 0;
+}
+
+.info h3 {
+  color: dodgerblue;
+  margin: 20px;
+}
+
+/* Submenu*/
+.submenu-sub {
+  margin: 10px 5px 0;
+}
+
+.submenu h4 {
+  color: dodgerblue;
+}
+
+.saas {
+  height: 315px;
+  overflow: hidden;
+}
+
+/* Services*/
+.services h1 {
+  position: relative;
+}
+
+.services-menu div img {
+  width: 100px;
+  padding: 0 20px;
+}
+
+.services-menu h4 {
+  color: dodgerblue;
+}
+
+/* Portfolio */
+.portfolio-block {
+  margin-bottom: 50px;
+}
+
+.portfolio-images img {
+  width: 400px;
+  height: 350px;
+  margin-bottom: 50px;
+}
+
+.portfolio-block div button {
+  width: 250px;
+  height: 40px;
+}
+
+/* Team  */
+.team h1 {
+  position: relative;
+}
+
+/*Slider Avatar */
+.slider-avatar {
+  padding-top: 50px;
+  height: 500px;
+}
+
+.slider-avatar img {
+  width: 100px;
+  height: 100px;
+}
+
+.slider-avatar p {
+  margin: 0;
+  padding: 60px 0;
+}
+
+.cube-button {
+  width: 25px;
+  height: 25px;
+}
+
+/* Our Stories  */
+.our-stories-h1 h1 {
+  position: relative;
+}
+
+.div-card {
+  width: 430px;
+}
+
+/* Contact us  */
+.contact-us-h1 h1 {
+  position: relative;
+}
+
+/* Our Gallery*/
+.our-gallery img {
+  width: 80px;
+  margin-bottom: 10px;
+}
+
+/*# sourceMappingURL=sass.css.map */
